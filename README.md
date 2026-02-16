@@ -1,4 +1,4 @@
-# Neural Doom: V1 🧠🔫
+# Neural Doom: V1 
 
 A neural world model that learns to simulate _Doom_ (1993) purely from pixels.
 
@@ -6,7 +6,7 @@ A neural world model that learns to simulate _Doom_ (1993) purely from pixels.
 
 ---
 
-## 🌟 Project Overview
+## Project Overview
 
 This project implements a **Generative World Model** inspired by the concept of "Neural Simulation." Instead of using the actual Doom engine to render frames, we train a **CNN-LSTM** neural network to predict the _next frame_ given a history of frames and a specific action.
 
@@ -21,7 +21,7 @@ During the "Rollout" phase, the real game engine is completely disconnected. The
 
 ---
 
-## 🧠 Architecture & Theory
+##  Architecture & Theory
 
 The model operates in three distinct stages to process space and time:
 
@@ -96,7 +96,7 @@ W: Attack
 
 Q: Quit
 
-📝 Files in this Repo
+ Files in this Repo
 record_data.py: Connects to ViZDoom and saves frames/actions to .npz.
 
 dataset.py: Handles sliding-window sequence creation for temporal training.
@@ -109,7 +109,7 @@ rollout.py: The interactive real-time neural simulator.
 
 inspect_dataset.py: Utility to verify data integrity and resolution.
 
-🔮 Roadmap
+ Roadmap
 V2: Expand action space to 7 buttons (Forward, Backward, Turning).
 
 V2: Implement Perceptual Loss (L1 + SSIM) for sharper, less blurry frames.
